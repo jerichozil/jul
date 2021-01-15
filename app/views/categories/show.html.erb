@@ -1,0 +1,29 @@
+<%= render "top" %>
+<div>
+	<table class="forceCenter">
+		<thead>
+			<tr>
+				<th>Id</th>
+				<th>
+					<span>Name</span>
+					<span><%= link_to "\u25B2".encode('utf-8'), category_path + "/asc" %></span>
+					<span><%= link_to "\u25BC".encode('utf-8'), category_path + "/desc" %></span>
+				</th>
+				<th>Description</th>
+			</tr>
+		</thead>
+		<tbody>
+			<% @products.each do |product| %>
+				<tr>
+					<td><%= product.id %></td>
+					<td><%= product.name %></td>
+					<td><%= product.description %></td>
+				</tr>
+			<% end %>
+		</tbody>
+	</table>
+</div>
+
+<div class="center" style="margin-top: 40px;">
+    <%= link_to "Clear", root_path %>
+</div>

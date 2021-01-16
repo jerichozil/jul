@@ -24,6 +24,9 @@
 	</table>
 </div>
 
+<div class="center">
+    <%= will_paginate @products, :previous_label => "\u2B9C", :next_label => "\u2B9E" %>
+</div>
 <div class="center" style="margin-top: 40px;">
     <%= link_to "Clear", root_path %>
 </div>

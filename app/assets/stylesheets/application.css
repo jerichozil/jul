@@ -34,32 +34,7 @@ p {
    line-height: 150%;
 }
 
-ul {
-   text-align: center;
-   padding: 5px;
-   background-color: #ececec;
-   border: 1px solid #ccc;
-   margin-bottom: 20px;
-}
 
-ul li {
-   display: inline;
-}
-
-table {
-	border-spacing: unset;
-	border-collapse: collapse;
-}
-
-th, td {
-	border: 1px solid rgba(0,0,0,.2);
-	padding: 3px 5px;
-}
-
-th a:link, th a:active, th a:visited {
-	padding: 0;
-	color: rgb(95,64,230); 
-}
 
 .center { text-align: center; }
 .forceCenter { 

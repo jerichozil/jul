@@ -23,7 +23,7 @@ categories = Category.create([
 ])
 
 10.times do |i|
-	10.times do |j|
-	  	Product.create(name: "#{categories[i].name} #{('a'..'z').to_a.shuffle[0,8].join}", description: "A product.", category_id: i+1)
+	rand(20..50).times do |j|
+	  	Product.create(name: "#{categories[i].name} #{('a'..'z').to_a.shuffle[0,8].join}", description: "A product.", price: rand(5..80), category_id: i+1)
 	end
 end

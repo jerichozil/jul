@@ -3,15 +3,17 @@
 // You can use Sass (SCSS) here: https://sass-lang.com/
 
 ul {
-   text-align: center;
-   padding: 5px;
-   background-color: #ececec;
-   border: 1px solid #ccc;
-   margin-bottom: 20px;
+	text-align: center;
+	padding: 5px;
+	background-color: #ececec;
+	border: 1px solid rgba(0,0,0,.6);
+	border-radius: 10px;
+	box-shadow: 2px 2px rgba(0,0,0,.1);
+	margin-bottom: 20px;
 }
 
 ul li {
-   display: inline;
+	display: inline;
 }
 
 table {
@@ -31,4 +33,11 @@ th a:link, th a:active, th a:visited {
 
 .pagination {
 	margin-top: 20px;
+}
+
+.main {
+	border: 1px solid rgba(0,0,0,.6);
+	border-radius: 10px;
+	box-shadow: 2px 2px rgba(0,0,0,.1);
+	padding: 20px;
 }

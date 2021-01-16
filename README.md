@@ -1,34 +1,14 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Ruby version: 
+ruby 2.6.6p146 (2020-03-31 revision 67876) [x64-mingw32]
 
-Things you may want to cover:
+Database:
+sqlite3
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-rails new jul
-rails generate model Category name:string description:text
-rails generate controller Categories index --skip-routes
-rails generate model Product name:string description:text category:references
-rails generate controller Products
-
-
-rails db:migrate
-rails db:seed
+Deployment instuctions:
+1. git remote add origin https://github.com/jerichozil/jul (master branch - default)
+2. git clone https://github.com/jerichozil/jul
+3. yarn install
+4. rails db:migrate
+5. rails db:seed
